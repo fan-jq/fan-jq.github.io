@@ -1,50 +1,121 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Fan JQ | Academic Homepage</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Jiaqi Fan | Academic Homepage</title>
 
   <style>
-    body {
-      max-width: 850px;
-      margin: 60px auto;
-      padding: 0 24px;
-      font-family: Arial, "Microsoft YaHei", sans-serif;
-      line-height: 1.7;
-      color: #222;
+    * {
+      box-sizing: border-box;
     }
 
-    header {
-      border-bottom: 1px solid #dddddd;
-      margin-bottom: 40px;
-      padding-bottom: 20px;
+    body {
+      max-width: 1250px;
+      margin: 36px auto;
+      padding: 0 18px;
+
+      font-family:
+        Arial,
+        "Helvetica Neue",
+        "Microsoft YaHei",
+        sans-serif;
+
+      font-size: 21px;
+      line-height: 1.45;
+      color: #111111;
+      background: #ffffff;
     }
 
     h1 {
-      margin-bottom: 8px;
+      margin: 0 0 28px;
+      font-size: 40px;
+      line-height: 1.2;
     }
 
     h2 {
-      margin-top: 36px;
+      margin: 32px 0 22px;
+      font-size: 30px;
+      line-height: 1.2;
     }
 
-    .subtitle {
-      color: #666666;
-      font-size: 18px;
+    hr {
+      margin: 28px 0;
+      border: 0;
+      border-top: 1px solid #888888;
+    }
+
+    p {
+      margin: 4px 0;
     }
 
     a {
-      color: #0969da;
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .profile {
+      line-height: 1.45;
+    }
+
+    .research-list {
+      margin-top: 0;
+      padding-left: 64px;
+    }
+
+    .research-list li {
+      margin-bottom: 16px;
+      padding-left: 4px;
+    }
+
+    .paper-title {
+      display: block;
+    }
+
+    .paper-info {
+      display: block;
+      margin-left: 0;
+    }
+
+    .journal {
+      font-style: normal;
     }
 
     footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #dddddd;
-      color: #777777;
-      font-size: 14px;
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid #aaaaaa;
+      color: #666666;
+      font-size: 16px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        margin-top: 24px;
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .research-list {
+        padding-left: 38px;
+      }
     }
   </style>
 </head>
@@ -52,57 +123,54 @@
 <body>
 
   <header>
-    <h1>Fan JQ</h1>
-    <p class="subtitle">Ph.D. Student in Mathematics</p>
+    <h1>Jiaqi Fan</h1>
   </header>
+
+  <hr>
+
+  <section class="profile">
+    <p>
+      Qiuzhen College, Tsinghua University
+    </p>
+
+    <!-- 非必要时建议不要公开详细地址和办公室号 -->
+
+    <p>
+      Email:
+      <a href="mailto:fanjq24@mails.tsinghua.edu.cn">
+        fanjq24@mails.tsinghua.edu.cn
+      </a>
+    </p>
+  </section>
+
+  <hr>
 
   <main>
     <section>
-      <h2>About Me</h2>
+      <h2>Research</h2>
 
-      <p>
-        Welcome to my academic homepage.
-        I am a Ph.D. student in mathematics.
-      </p>
+      <ol class="research-list" reversed start="3">
 
-      <p>
-        My research interests include
-        mathematical analysis, geometry, algebra,
-        and related areas.
-      </p>
-    </section>
+        <li>
+          <span class="paper-title">
+            Title of Your Third Paper,
+            with Collaborator A and Collaborator B.
+          </span>
 
-    <section>
-      <h2>Research Interests</h2>
+          <span class="paper-info">
+            Preprint,
+            <a href="#">arXiv:XXXX.XXXXX</a>.
+          </span>
+        </li>
 
-      <ul>
-        <li>Research area 1</li>
-        <li>Research area 2</li>
-        <li>Research area 3</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-
-      <p>
-        Ph.D. in Mathematics<br>
-        Your University, 20XX–present
-      </p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-
-      <p>
-        Email: your-email@example.com
-      </p>
+      </ol>
     </section>
   </main>
 
   <footer>
-    <p>Last updated: 2026</p>
+    Last updated: July 2026
   </footer>
 
 </body>
+
 </html>
