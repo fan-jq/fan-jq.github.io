@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,11 @@
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Academic homepage of Jiaqi Fan, a mathematics Ph.D. student at Tsinghua University."
   >
 
   <title>Jiaqi Fan | Academic Homepage</title>
@@ -52,7 +57,7 @@
     }
 
     p {
-      margin: 4px 0;
+      margin: 8px 0;
     }
 
     a {
@@ -60,43 +65,38 @@
       text-decoration: none;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
       text-decoration: underline;
     }
 
     .profile {
-      line-height: 1.45;
+      max-width: 1100px;
+      line-height: 1.55;
+    }
+
+    .research-interests {
+      max-width: 1100px;
+      line-height: 1.55;
     }
 
     .research-list {
       margin-top: 0;
-      padding-left: 64px;
+      padding-left: 42px;
+      list-style-type: disc;
     }
 
     .research-list li {
-      margin-bottom: 16px;
-      padding-left: 4px;
+      margin-bottom: 24px;
+      padding-left: 6px;
     }
 
     .paper-title {
-      display: block;
+      color: #0645ad;
     }
 
-    .paper-info {
-      display: block;
-      margin-left: 0;
-    }
-
-    .journal {
-      font-style: normal;
-    }
-
-    footer {
-      margin-top: 48px;
-      padding-top: 18px;
-      border-top: 1px solid #aaaaaa;
-      color: #666666;
-      font-size: 16px;
+    .paper-status {
+      font-style: italic;
     }
 
     @media (max-width: 700px) {
@@ -114,7 +114,11 @@
       }
 
       .research-list {
-        padding-left: 38px;
+        padding-left: 30px;
+      }
+
+      .research-list li {
+        padding-left: 2px;
       }
     }
   </style>
@@ -129,11 +133,18 @@
   <hr>
 
   <section class="profile">
-    <p>
-      Qiuzhen College, Tsinghua University
-    </p>
 
-    <!-- 非必要时建议不要公开详细地址和办公室号 -->
+    <p>
+      I am a second-year Ph.D. student in mathematics at
+      Qiuzhen College, Tsinghua University, under the supervision of 
+      <a
+        href="https://yangf75.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Fan Yang</a>. 
+      I received my bachelor's degree in Mathematics and Applied Mathematics
+      from Taishan College, Shandong University.
+    </p>
 
     <p>
       Email:
@@ -141,35 +152,86 @@
         fanjq24@mails.tsinghua.edu.cn
       </a>
     </p>
+
   </section>
 
   <hr>
 
   <main>
-    <section>
-      <h2>Research</h2>
 
-      <ol class="research-list" reversed start="3">
+    <section>
+      <h2>Research interests</h2>
+
+      <p class="research-interests">
+        I am interested in probability theory, mathematical physics, and high-dimensional statistics. 
+        My current research focus on random matrix theory, especially the Anderson
+        localization&ndash;delocalization transition and random band matrices.
+      </p>
+    </section>
+
+    <section>
+      <h2>Research papers</h2>
+
+      <ul class="research-list">
 
         <li>
-          <span class="paper-title">
-            Title of Your Third Paper,
-            with Collaborator A and Collaborator B.
-          </span>
-
-          <span class="paper-info">
+          <a
+            class="paper-title"
+            href="https://arxiv.org/abs/2604.12248"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Localization lengths of power-law random band matrices</a>.
+          With Fan Yang and Jun Yin, 2026.
+          <span class="paper-status">
             Preprint,
-            <a href="#">arXiv:XXXX.XXXXX</a>.
+            <a
+              href="https://arxiv.org/abs/2604.12248"
+              target="_blank"
+              rel="noopener noreferrer"
+            >arXiv:2604.12248</a>.
           </span>
         </li>
 
-      </ol>
-    </section>
-  </main>
+        <li>
+          <a
+            class="paper-title"
+            href="https://arxiv.org/abs/2507.11945"
+            target="_blank"
+            rel="noopener noreferrer"
+          >A block reduction method for random band matrices with general variance profiles</a>.
+          With Fan Yang and Jun Yin, 2025.
+          <span class="paper-status">
+            Preprint,
+            <a
+              href="https://arxiv.org/abs/2507.11945"
+              target="_blank"
+              rel="noopener noreferrer"
+            >arXiv:2507.11945</a>.
+          </span>
+        </li>
 
-  <footer>
-    Last updated: July 2026
-  </footer>
+        <li>
+          <a
+            class="paper-title"
+            href="https://arxiv.org/abs/2504.00512"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Localization-delocalization transition for a random block matrix model at the edge</a>.
+          With Bertrand Stone, Fan Yang, and Jun Yin, 2025.
+          <span class="paper-status">
+            Preprint,
+            <a
+              href="https://arxiv.org/abs/2504.00512"
+              target="_blank"
+              rel="noopener noreferrer"
+            >arXiv:2504.00512</a>.
+          </span>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
 
 </body>
 
